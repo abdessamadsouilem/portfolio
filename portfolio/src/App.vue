@@ -3,6 +3,8 @@
     <Head></Head>
     <AboutMe></AboutMe>
     <Experience></Experience>
+    <Skills></Skills>
+    <Project></Project>
     
   </div>
 </template>
@@ -13,12 +15,16 @@
 import Head from "./components/Head";
 import AboutMe from "./components/AboutMe";
 import Experience from "./components/Experience";
+import Skills from "./components/Skills";
+import Project from "./components/Project";
 export default {
   name: "App",
   components:{
     Head,
     AboutMe,
     Experience,
+    Skills,
+    Project
   }
 }
 </script>
