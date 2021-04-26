@@ -1,10 +1,10 @@
 <template>
  
-      <div class="bg-image d-flex flex-column justify-content-center">
+      <div class="bg-image d-flex flex-column justify-content-center img-fluid">
         <div class="full-name">
-          <h1>Abdessamad Souilem</h1>
-          <hr />
-          <p>Full-Stack Developer</p>
+          <h1 data-aos="fade-down">Abdessamad Souilem</h1>
+          
+          <p data-aos="fade-up">Full-Stack Developer</p>
         </div>
       </div>
         
@@ -21,18 +21,20 @@ name:"Head",
 </script>
 
 <style  scoped>
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
       
 
 .bg-image{
+  width: 100%;
   height: 100vh;
   background-image: url("../assets/bg.jpg");
   background-size: cover;
   background-attachment: fixed;
   z-index: 0;
 }
+
 .full-name{
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   z-index: 1;
   
 }
@@ -44,9 +46,25 @@ p{
    color: white;
     font-size:30px;
 }
-hr{
-  width:55%;
-  border: 1px solid white;
+h1:after {
+      content: "";
+      width: 55%;
+      display: block;
+      margin: 20px auto;
+      border-bottom: 2px solid white;
+}
+@media (max-width: 500px) {
+  
+    h1 {
+      font-size: 25px;
+      
+    }
+    p{
+   
+    font-size:20px;
+}
+    
+  
 }
 </style>>
 
