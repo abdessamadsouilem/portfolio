@@ -40,7 +40,7 @@ name:"Head",
 }
 h1{
    color: white;
-    font-size:60px;
+    font-size:50px;
 }
 p{
    color: white;
@@ -52,6 +52,11 @@ h1:after {
       display: block;
       margin: 20px auto;
       border-bottom: 2px solid white;
+}
+@media (max-width: 600px) {
+.bg-image{
+  background-image: url("../assets/bag.jpg");
+}
 }
 @media (max-width: 500px) {
   

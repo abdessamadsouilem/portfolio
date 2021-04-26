@@ -185,7 +185,7 @@ window.addEventListener('scroll', reveal);
   }
   .timeline ul li:nth-child(even)::before {
     transform: translate(-50%, -50%);
-    left: -49px;
+    left: -39px;
   }
   .timeline-content .date {
     position: absolute;

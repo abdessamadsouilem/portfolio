@@ -5,6 +5,7 @@
     <Experience></Experience>
     <Skills></Skills>
     <Project></Project>
+    <Footer></Footer>
     
   </div>
 </template>
@@ -17,6 +18,7 @@ import AboutMe from "./components/AboutMe";
 import Experience from "./components/Experience";
 import Skills from "./components/Skills";
 import Project from "./components/Project";
+import Footer from "./components/Footer";
 export default {
   name: "App",
   components:{
@@ -24,7 +26,8 @@ export default {
     AboutMe,
     Experience,
     Skills,
-    Project
+    Project,
+    Footer,
   }
 }
 </script>
