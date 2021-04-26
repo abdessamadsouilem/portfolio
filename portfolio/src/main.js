@@ -4,6 +4,7 @@ import router from './router'
 import store from './store'
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
+import VueTimeline from "@growthbunker/vuetimeline";
 
 
 import { library } from '@fortawesome/fontawesome-svg-core'
@@ -17,6 +18,7 @@ Vue.use(VueScrollmagic)
 library.add(faFontAwesome)
 
 Vue.config.productionTip = false
+Vue.use(VueTimeline);
 
 new Vue({
   created(){
