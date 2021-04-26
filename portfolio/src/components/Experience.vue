@@ -1,8 +1,13 @@
 <template>
   <div class="First">
       <br>
+      <div class="id" data-aos="fade-down">
+      <h1>EXPERIENCE</h1>
+      <p>PROFESSIONAL AND ACADEMIC</p>
+      </div>
+      
       <br>
-      <br>
+      
   <div class="container-fluid">
   <div class="timeline">
     <ul>
@@ -20,8 +25,8 @@
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur tempora ab laudantium voluptatibus aut eos placeat laborum, quibusdam exercitationem labore.</p>
         </div>
       </li>
-      <li class="reveal">
-        <div class="timeline-content ">
+      <li  class="reveal">
+        <div  class="timeline-content ">
           <h3 class="date">18th July, 2019</h3>
           <h1>Getting university diploma</h1>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur tempora ab laudantium voluptatibus aut eos placeat laborum, quibusdam exercitationem labore.</p>
@@ -30,7 +35,7 @@
       <li class="reveal">
         <div class="timeline-content ">
           <h3 class="date">20th July, 2017</h3>
-          <h1>graduated from high school</h1>
+          <h1>Graduated from high school</h1>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur tempora ab laudantium voluptatibus aut eos placeat laborum, quibusdam exercitationem labore.</p>
         </div>
       </li>
@@ -47,8 +52,6 @@
 export default {
 
 }
-</script>
-<script>
 window.addEventListener('scroll', reveal);
 
     function reveal(){
@@ -73,6 +76,14 @@ window.addEventListener('scroll', reveal);
 <style>
 .First{
     background-color: #424242;
+    color: white;
+}
+.id:after {
+      content: "";
+      width: 170px;
+      display: block;
+      margin: 20px auto;
+      border-bottom: 2px solid white;
 }
 .container-fluid {
   width: 100%;
@@ -91,6 +102,7 @@ window.addEventListener('scroll', reveal);
 
 .timeline ul {
   list-style: none;
+  
 }
 .timeline ul li {
   padding: 20px;
@@ -123,7 +135,7 @@ window.addEventListener('scroll', reveal);
   position: relative;
   transform: translateY(150px);
   opacity: 0;
-  transition: all 2s  ease-in-out;
+  transition: all .2s  ease-in-out;
 }
 
 .reveal.active{
@@ -173,7 +185,7 @@ window.addEventListener('scroll', reveal);
   }
   .timeline ul li:nth-child(even)::before {
     transform: translate(-50%, -50%);
-    left: -40px;
+    left: -49px;
   }
   .timeline-content .date {
     position: absolute;
@@ -182,6 +194,27 @@ window.addEventListener('scroll', reveal);
   .timeline ul li:hover::before {
     background-color: black;
   }
+}
+@media (max-width: 500px) {
+  
+    h1 {
+      font-size: 16px;
+    }
+    .timeline-content h1{
+      font-size: 16px;
+    }
+    p{
+    font-size:13px;
+}
+.timeline-content p {
+  font-size:13px;
+}
+
+}
+@media (max-width: 768px) {
+  .timeline ul {
+  padding: 0px  !important;
+}
 }
 
 </style>
