@@ -26,7 +26,7 @@ export default {
 .foo{
     background-color: #353535;
     color: white;
-    height: 50px;
+    height: auto;
 }
 ul{
     margin-top: 5px;
